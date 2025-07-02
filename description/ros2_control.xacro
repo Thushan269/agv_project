@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
-<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+<!--<robot xmlns:xacro="http://www.ros.org/wiki/xacro">-->
+<robot name="my_bot" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
 
     <ros2_control name="GazeboSystem" type="system">
@@ -26,7 +27,7 @@
 
     <gazebo>
         <plugin name="gazebo_ros2_control" filename="libgazebo_ros2_control.so">
-            <parameters>$(find agv_project)/config/my_controllers.yaml</parameters>
+            <!--<parameters>$(find agv_project)/config/my_controllers.yaml</parameters>-->
         </plugin>
     </gazebo>
 
